@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.evertech.core.widget.RealPageLoadingView
+        android:id="@+id/rplv"
+        style="@style/Layout_Match_Match" />
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<resources>
+
+    <!--========= Base application theme =========-->
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="MyAppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--========= Layout Width And Height =========-->
+
+    <style name="Layout_Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+
+    <style name="Layout_Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Wrap_Match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout_Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Constraint_Match_Match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Layout_Constraint_Match_Wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Constraint_Wrap_Match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <!--========= Layout Weight =========-->
+    <style name="Weight_Horizontal_Match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="Weight_Horizontal_Wrap" parent="Weight_Horizontal_Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Weight_Vertical_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Constraint_Weight_Horizontal_Match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_constraintHorizontal_weight">1</item>
+    </style>
+
+    <style name="Constraint_Weight_Horizontal_Wrap" parent="Constraint_Weight_Horizontal_Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Constraint_Weight_Vertical_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintVertical_weight">1</item>
+    </style>
+
+    <style name="Constraint_Weight_Vertical_Wrap" parent="Constraint_Weight_Vertical_Match">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--========= 其他 =========-->
+
+    <style name="title_bar_title" parent="Layout_Match_Match">
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">15</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="dialog_dim" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+
+    <!--========= 全局AlertView =========-->
+    <style name="tv_simple_alert_content" parent="Layout_Match_Wrap">
+        <item name="android:textColor">#23232e</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:lineSpacingMultiplier">1.51</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tv_simple_alert_content_car" parent="tv_simple_alert_content">
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="tv_simple_alert_single" parent="tv_simple_alert_content">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="tv_simple_alert_single_car" parent="tv_simple_alert_content_car">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="tv_simple_alert_left" parent="tv_simple_alert_single">
+        <item name="android:width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tv_simple_alert_left_car" parent="tv_simple_alert_single_car">
+        <item name="android:width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="iv_back_bold" >
+        <item name="android:layout_width">@dimen/pt_twenty_seven</item>
+        <item name="android:layout_height">@dimen/pt_twenty_seven</item>
+        <item name="android:src">@mipmap/icon_back</item>
+        <item name="android:layout_marginLeft">@dimen/pt_thirty</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <declare-styleable name="FlowTagView">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+        <!-- 是否是固定布局 -->
+        <attr name="isFixed" format="boolean" />
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+
+
+
+
+</resources>

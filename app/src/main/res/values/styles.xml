@@ -1,0 +1,313 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--========= Layout Width And Height =========-->
+
+    <style name="Layout_Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout_Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Wrap_Match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="Layout_Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Layout_Constraint_Match_Match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+
+    <style name="Layout_Constraint_Match_Wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Layout_Constraint_Wrap_Match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <!--========= Layout Weight =========-->
+
+    <style name="Weight_Horizontal_Match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="Weight_Horizontal_Wrap" parent="Weight_Horizontal_Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Weight_Vertical_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="Constraint_Weight_Horizontal_Match">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_constraintHorizontal_weight">1</item>
+
+    </style>
+
+
+    <style name="Constraint_Weight_Horizontal_Wrap" parent="Constraint_Weight_Horizontal_Match">
+
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Constraint_Weight_Vertical_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintVertical_weight">1</item>
+    </style>
+
+
+    <style name="Constraint_Weight_Vertical_Wrap" parent="Constraint_Weight_Vertical_Match">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
+    <style name="tv_splash_welcome" parent="Layout_Wrap_Wrap">
+        <item name="android:text">欢迎访问</item>
+        <item name="android:textSize">26pt</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="iv_splash_logo" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:src">@mipmap/icon_slice_splash</item>
+    </style>
+
+    <style name="tv_splash_welcome_bottom" parent="Layout_Wrap_Wrap">
+        <item name="android:text">Fedup专业维权平台</item>
+        <item name="android:textSize">22pt</item>
+        <item name="android:textColor">#000</item>
+
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="iv_welcome" parent="Layout_Wrap_Wrap">
+        <item name="android:src">@mipmap/icon_welcome</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="tv_welcome_one" parent="Layout_Wrap_Wrap">
+        <item name="android:text">告别繁琐的投诉步骤</item>
+        <item name="android:textSize">@dimen/pt_twenty</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/pt_twenty_three</item>
+        <item name="android:layout_marginBottom">@dimen/pt_seventeen</item>
+    </style>
+
+    <style name="tv_welcome_two" parent="Layout_Wrap_Wrap">
+        <item name="android:text">为您发起声音</item>
+        <item name="android:textSize">@dimen/pt_twenty</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="tv_welcome_login">
+        <item name="android:layout_width">@dimen/pt_one_hundred_forty_six</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">登录</item>
+        <item name="android:textSize">@dimen/pt_twenty</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:background">@drawable/bg_login</item>
+    </style>
+
+
+    <style name="tv_login_welcome" parent="Layout_Wrap_Wrap">
+        <item name="android:text">欢迎访问</item>
+        <item name="android:textSize">26pt</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/pt_thirty_two</item>
+    </style>
+
+    <style name="iv_login_logo" parent="Layout_Wrap_Wrap">
+        <item name="android:src">@mipmap/icon_slice_splash</item>
+        <item name="android:layout_marginStart">@dimen/pt_thirty_two</item>
+    </style>
+
+    <style name="iv_login_phone">
+        <item name="android:layout_width">@dimen/pt_twenty_seven</item>
+        <item name="android:layout_height">@dimen/pt_twenty_seven</item>
+        <item name="android:src">@mipmap/icon_login_phone</item>
+    </style>
+
+
+    <style name="tv_login_country_code" parent="Layout_Wrap_Wrap">
+        <item name="android:text">+86</item>
+        <item name="android:textSize">@dimen/pt_fourteen</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/pt_twelve</item>
+    </style>
+
+    <style name="et_login_phone_number" parent="Layout_Wrap_Match">
+        <item name="android:textColorHint">@color/colorLoginHintPhoneNumber</item>
+        <item name="android:textSize">@dimen/pt_fourteen</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/pt_ten</item>
+        <item name="android:hint">@string/hint_login_input_phone_number</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="divider_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/pt_one</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+
+    <style name="tv_forgot_password" parent="Layout_Wrap_Wrap">
+        <item name="android:text">忘记密码?</item>
+        <item name="android:textSize">@dimen/pt_fourteen</item>
+        <item name="android:textColor">@color/colorForgotPassword</item>
+
+        <item name="android:layout_marginStart">@dimen/pt_thirty_two</item>
+        <item name="android:layout_marginEnd">@dimen/pt_twenty_eight</item>
+        <item name="android:layout_marginTop">@dimen/pt_seventeen</item>
+    </style>
+
+    <style name="tv_btn_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/pt_forty_two</item>
+        <item name="android:text">登录</item>
+        <item name="android:textSize">@dimen/pt_eighteen</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:background">@drawable/bg_login</item>
+        <item name="android:layout_marginStart">@dimen/pt_twenty_two</item>
+        <item name="android:layout_marginEnd">@dimen/pt_twenty_one</item>
+        <item name="android:layout_marginTop">@dimen/pt_twenty_four</item>
+
+    </style>
+
+    <style name="tv_to_register" parent="Layout_Wrap_Wrap">
+        <item name="android:text">没有账号去注册</item>
+        <item name="android:textSize">@dimen/pt_fourteen</item>
+        <item name="android:textColor">@color/colorCommBlue</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/pt_twenty_four</item>
+
+    </style>
+
+
+    <style name="tv_login_get_verify_code">
+        <item name="android:layout_width">@dimen/pt_eighty_four</item>
+        <item name="android:layout_height">@dimen/pt_thirty</item>
+        <item name="android:text">获取验证码</item>
+        <item name="android:textSize">@dimen/pt_twelve</item>
+        <item name="android:textColor">@color/colorCommBlue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:background">@drawable/bg_register</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+
+    <style name="cb_login" parent="Layout_Wrap_Wrap">
+        <item name="android:button">@drawable/agreement_checkbox_style</item>
+
+        <!--   <item name="android:layout_width">@dimen/pt_thirteen</item>
+        <item name="android:layout_height">@dimen/pt_thirteen</item>
+
+     <item name="android:paddingLeft">25.0dip</item>-->
+
+        <item name="android:maxHeight">@dimen/pt_thirteen</item>
+    </style>
+
+    <style name="tv_register_agreement" parent="Layout_Wrap_Wrap">
+        <item name="android:text">点击即代表您已阅读并同意Fedup网《用户服务协议》和《隐私权保护政策》</item>
+        <item name="android:textSize">@dimen/pt_twelve</item>
+        <item name="android:textColor">#273642</item>
+        <item name="android:layout_marginStart">@dimen/pt_twelve</item>
+    </style>
+
+    <style name="et_register_email" parent="Layout_Wrap_Match">
+        <item name="android:textColorHint">@color/colorLoginHintPhoneNumber</item>
+        <item name="android:textSize">@dimen/pt_fourteen</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/pt_ten</item>
+        <item name="android:hint">@string/hint_register_input_email</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="et_register_username" parent="Layout_Wrap_Match">
+        <item name="android:textColorHint">@color/colorLoginHintPhoneNumber</item>
+        <item name="android:textSize">@dimen/pt_fourteen</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/pt_ten</item>
+        <item name="android:hint">@string/hint_register_input_username</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="et_country_code_search" parent="Layout_Match_Match">
+        <item name="android:textColorHint">@color/colorLoginHintPhoneNumber</item>
+        <item name="android:textSize">@dimen/pt_twelve</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/pt_eleven</item>
+        <item name="android:hint">@string/hint_search_country_code</item>
+        <item name="android:background">@null</item>
+
+    </style>
+
+
+    <style name="tv_password_hint" parent="Layout_Wrap_Wrap">
+        <item name="android:text">@string/hint_password_format</item>
+        <item name="android:textSize">@dimen/pt_eight</item>
+        <item name="android:textColor">@color/colorHintPasswordFormat</item>
+
+        <item name="android:layout_marginTop">@dimen/pt_three</item>
+
+    </style>
+
+</resources>

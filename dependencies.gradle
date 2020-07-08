@@ -1,0 +1,233 @@
+/**
+ * Dependencies and their versions.
+ */
+ext {
+    /* All dependencies' version should be defined here */
+
+    versions = [
+            design              : '1.0.0-rc01',
+            recycler_view         : '1.0.0',
+            multidex             : '2.0.1',
+
+            /* Router */
+            arouter_api          : '1.5.0',
+            arouter_compiler     : '1.2.2',
+
+            /* Kotlin */
+            kotlin_version       : '1.3.61',
+
+            /* Net */
+            retrofit             : "2.6.1",
+            okhttp               : "3.12.0",
+
+            /* DB */
+            room                 : "1.1.1",
+
+            /* UM */
+            um_common            : "1.5.4",
+            um_analytics         : "7.5.4",
+
+            sonacube             : "2.7",
+
+            /* P/S Event */
+            eventbus             : '3.1.1',
+
+            /* ReactiveX */
+            rx_java              : '2.2.0',
+            rx_android           : '2.0.2',
+            rx_lifecycle         : '2.2.1',
+            rx_binding           : '2.1.1',
+            rx_permissions       : "0.9.4",
+
+            /* Video/Audio player */
+            exoplayer            : "2.9.3",
+
+            /* Picture */
+            glide                : "4.8.0",
+            glide_transformations: "4.0.1",
+            photo_view           : "2.0.0",
+
+            /* Json */
+            gson                 : '2.8.6',
+
+            /* WeChat Pay */
+            wechat_pay           : '5.4.0',
+
+            /* ButterKnife */
+            butterknife          : "10.2.1",
+            butterknife_compiler : "10.2.1",
+
+            /* Utils */
+            utilcode             : '1.22.10',
+
+            /* JPush */
+            jpush                : "3.1.8",
+            jpush_core           : "1.2.6",
+
+            /* Zxing */
+            zxcore               : "3.3.3",
+            zxjavase             : "3.3.0",
+
+            /* Ptr and Load */
+            pull_refresh         : '1.0.11',
+            recycler_adapter     : "2.9.30",
+
+            /* Immersive  */
+            immersion_bar        : "2.3.0",
+
+            /* Circle Image */
+            circle_image         : '3.0.1',
+
+            /* Rounded image */
+            rounded_image        : "2.3.0",
+
+            /* PopUp */
+            popup                : "2.1.8",
+
+            /* Range Seek Bar */
+            range_seek_bar       : "v3.0.0",
+
+            /* EditText with clear tag */
+            xedittext            : "2.0.0",
+
+            /* Rating bar */
+            rating_bar           : "1.4.2",
+
+            /* Tag view */
+            flow_layout          : "1.1.2",
+
+            /* Footprint banner */
+            footprint_banner     : "2.5.1",
+
+            /* Auto size */
+            auto_size            : "1.1.2",
+
+            /* WebView */
+            agent_web            : "4.0.2",
+
+            /* Wheel picker*/
+            picker_view          : "4.1.6",
+
+            /* expandable_textView */
+            expandable_textView  : "1.0.0",
+
+            /* jsoup */
+            jsoup                : '1.12.1',
+
+            /*toast*/
+            toast                 : '5.0'
+    ]
+
+    /* All Android official support dependencies */
+    support = [
+            desgin           : "com.google.android.material:material:$versions.design",
+            recyclerView     : "androidx.recyclerview:recyclerview:$versions.recycler_view",
+            cardView         : "androidx.cardview:cardview:$versions.recycler_view",
+            multidex         : "androidx.multidex:multidex:$versions.multidex"
+    ]
+
+
+    arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
+    arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
+
+    kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin_version"
+
+    retrofit = [
+            retrofit           : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            adapter_rxjava2    : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+            converter_gson     : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+            logging_interceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okhttp",
+            scalars            : "com.squareup.retrofit2:converter-scalars:$versions.retrofit"
+    ]
+
+    room_compiler = 'androidx.room:room-compiler:2.0.0'
+    room = [
+            room        : "android.arch.persistence.room:runtime:$versions.room",
+            room_rxjava2: "android.arch.persistence.room:rxjava2:$versions.room"
+    ]
+
+    um = [
+            um_common   : "com.umeng.umsdk:common:$versions.um_common",
+            um_analytics: "com.umeng.umsdk:analytics:$versions.um_analytics"
+    ]
+
+    eventbus = "org.greenrobot:eventbus:$versions.eventbus"
+
+    rx = [
+            rx_java                : "io.reactivex.rxjava2:rxjava:$versions.rx_java",
+
+            rx_android             : "io.reactivex.rxjava2:rxandroid:$versions.rx_android",
+
+            rx_lifecycle           : "com.trello.rxlifecycle2:rxlifecycle:$versions.rx_lifecycle",
+            rx_lifecycle_components: "com.trello.rxlifecycle2:rxlifecycle-components:$versions.rx_lifecycle",
+
+            rx_binding             : "com.jakewharton.rxbinding2:rxbinding:$versions.rx_binding",
+            rx_binding_support_v4  : "com.jakewharton.rxbinding2:rxbinding-support-v4:$versions.rx_binding",
+            rx_binding_appcompat_v7: "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:$versions.rx_binding",
+
+            rx_permissions         : "com.tbruyelle.rxpermissions2:rxpermissions:$versions.rx_permissions@aar"
+    ]
+
+    gson = "com.google.code.gson:gson:$versions.gson"
+
+    wechat_pay = "com.tencent.mm.opensdk:wechat-sdk-android-with-mta:$versions.wechat_pay"
+
+    butterknife = "com.jakewharton:butterknife:$versions.butterknife"
+    butterknife_compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife_compiler"
+
+    exoplayer = "com.google.android.exoplayer:exoplayer:$versions.exoplayer"
+
+    glide = [
+            glide                : "com.github.bumptech.glide:glide:$versions.glide",
+            glide_transformations: "jp.wasabeef:glide-transformations:$versions.glide_transformations"
+    ]
+
+    photo_view = "com.github.chrisbanes:PhotoView:$versions.photo_view"
+
+    utils = "com.blankj:utilcode:$versions.utilcode"
+
+    jpush = [
+            jpush     : "cn.jiguang.sdk:jpush:$versions.jpush",
+            jpush_core: "cn.jiguang.sdk:jcore:$versions.jpush_core"
+    ]
+
+    zxing = [
+            zxcore    : "com.google.zxing:core:$versions.zxcore",
+            zxjavase  : "com.google.zxing:javase:$versions.zxjavase",
+            zxembedded: "com.journeyapps:zxing-android-embedded:$versions.zxjavase"
+    ]
+
+    pull_refresh = "in.srain.cube:ultra-ptr:$versions.pull_refresh"
+
+    recycler_adapter = "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.recycler_adapter"
+
+    immersion_bar = "com.gyf.barlibrary:barlibrary:$versions.immersion_bar"
+
+    circle_image = "de.hdodenhof:circleimageview:$versions.circle_image"
+
+    rounded_image = "com.makeramen:roundedimageview:$versions.rounded_image"
+
+    popup = "com.github.razerdp:BasePopup:$versions.popup"
+
+    range_seek_bar = "com.github.Jay-Goo:RangeSeekBar:$versions.range_seek_bar"
+
+    xedittext = "com.xw.repo:xedittext:$versions.xedittext@aar"
+
+    rating_bar = "com.github.ome450901:SimpleRatingBar:$versions.rating_bar"
+
+    flow_layout = "com.hyman:flowlayout-lib:$versions.flow_layout"
+
+    footprint_banner = "com.github.kelinZhou:Banner:$versions.footprint_banner"
+
+    auto_size = "me.jessyan:autosize:$versions.auto_size"
+
+    agent_web = "com.just.agentweb:agentweb:$versions.agent_web"
+
+    picker_view = "com.contrarywind:Android-PickerView:$versions.picker_view"
+
+    expandable_textView = "cn.carbs.android:ExpandableTextView:$versions.expandable_textView"
+
+    jsoup = "org.jsoup:jsoup:$versions.jsoup"
+    toast =   "com.hjq:toast:$versions.toast"
+
+}

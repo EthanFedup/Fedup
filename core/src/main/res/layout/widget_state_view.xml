@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--&lt;!&ndash;ic_state_no_network&ndash;&gt;ic_state_loading_error-->
+        <ImageView
+            android:id="@+id/iv_hint"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+         />
+
+        <!--   android:src="@mipmap/ic_state_no_network" -->
+
+        <TextView
+            android:id="@+id/tv_hint"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="10dp"
+            android:text="网络走丢啦，请检查网络后重试"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_retry"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="20dp"
+
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="27dp"
+            android:paddingRight="27dp"
+            android:paddingTop="6dp"
+            android:text="重新尝试"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <!-- android:background="@drawable/bg_state_view_retry"-->
+    </LinearLayout>
+
+</FrameLayout>

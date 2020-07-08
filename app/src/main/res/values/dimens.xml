@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="pt_one">1pt</dimen>
+  <dimen name="pt_three">3pt</dimen>
+  <dimen name="pt_six">6pt</dimen>
+  <dimen name="pt_eight">8pt</dimen>
+  <dimen name="pt_ten">10pt</dimen>
+  <dimen name="pt_eleven">11pt</dimen>
+  <dimen name="pt_twelve">12pt</dimen>
+  <dimen name="pt_thirteen">13pt</dimen>
+  <dimen name="pt_fourteen">14pt</dimen>
+  <dimen name="pt_fifteen">15pt</dimen>
+  <dimen name="pt_seventeen">17pt</dimen>
+  <dimen name="pt_eighteen">18pt</dimen>
+  <dimen name="pt_nineteen">19pt</dimen>
+  <dimen name="pt_twenty">20pt</dimen>
+  <dimen name="pt_twenty_one">21pt</dimen>
+  <dimen name="pt_twenty_two">22pt</dimen>
+  <dimen name="pt_twenty_three">23pt</dimen>
+  <dimen name="pt_twenty_four">24pt</dimen>
+  <dimen name="pt_twenty_six">26pt</dimen>
+  <dimen name="pt_twenty_seven">27pt</dimen>
+  <dimen name="pt_twenty_eight">28pt</dimen>
+  <dimen name="pt_thirty">30pt</dimen>
+  <dimen name="pt_thirty_two">32pt</dimen>
+  <dimen name="pt_thirty_five">35pt</dimen>
+  <dimen name="pt_thirty_six">36pt</dimen>
+  <dimen name="pt_thirty_eight">38pt</dimen>
+  <dimen name="pt_forty_two">42pt</dimen>
+  <dimen name="pt_forty_seven">47pt</dimen>
+  <dimen name="pt_fifty_nine">59pt</dimen>
+  <dimen name="pt_seventy">70pt</dimen>
+  <dimen name="pt_eighty_four">84pt</dimen>
+  <dimen name="pt_one_hundred">100pt</dimen>
+  <dimen name="pt_one_hundred_forty_six">146pt</dimen>
+</resources>

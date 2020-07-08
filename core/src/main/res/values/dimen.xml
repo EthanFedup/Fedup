@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">30dp</dimen>
+    <dimen name="pt_twenty_seven">27pt</dimen>
+    <dimen name="pt_thirty">30pt</dimen>
+    <dimen name="pt_fifty">50pt</dimen>
+</resources>

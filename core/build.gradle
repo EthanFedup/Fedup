@@ -1,0 +1,120 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply from:"../config.gradle"
+apply from:"../dependencies.gradle"
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kapt {
+        arguments {
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation kotlinDeps
+//    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation appcompat
+    implementation core_ktx
+    implementation constraintlayout
+    testImplementation java_test
+    androidTestImplementation android_test.values()
+
+
+
+    api support.values()
+
+    /* Router */
+    api arouter_api
+    kapt arouter_compiler
+    /* Kotlin */
+    api kotlin
+    /* Net */
+    api retrofit.values()
+    /* DB */
+    api room.values()
+    kapt room_compiler
+    /* UM */
+    api um.values()
+    /* P/S Event */
+    api eventbus
+    /* ReactiveX */
+    api rx.values()
+    /* Video/Audio player */
+    api exoplayer
+    /* Picture */
+    api glide.values()
+    api photo_view
+    /* Json */
+    api gson
+    /* ButterKnife */
+    api butterknife
+    kapt butterknife_compiler
+    /* Rounded Image */
+    api rounded_image
+    /* Circle Image */
+    api circle_image
+    /* Pull to refresh */
+    api pull_refresh
+    /* RecyclerView adapter */
+    api recycler_adapter
+    /* Immersive */
+    api immersion_bar
+    /* Range Seek Bar */
+    api range_seek_bar
+    /* Popup */
+    api popup
+    /* EditText with clear tag */
+    api xedittext
+    /* Utils */
+    api utils
+    /* Tag view */
+    api flow_layout
+    /* Screen adaption */
+    api auto_size
+    /* WebView */
+    api agent_web
+    /* Wheel picker*/
+    api picker_view
+    /* expandableTextView*/
+    api expandable_textView
+
+    /* JPush */
+//    api jpush.values()
+    /*toast*/
+    api toast
+    /*Router*/
+    api arouter_api
+    kapt arouter_compiler
+}

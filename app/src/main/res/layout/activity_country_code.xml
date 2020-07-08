@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.view.CountryCodeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt_thirty_five"
+        android:layout_marginStart="@dimen/pt_fourteen"
+        android:layout_marginEnd="@dimen/pt_fourteen"
+        android:layout_marginTop="@dimen/pt_fourteen"
+        android:background="@drawable/bg_country_code_search"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/pt_nineteen"
+            android:src="@mipmap/icon_search" />
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/et_country_code_search" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt_one"
+        android:layout_marginTop="@dimen/pt_seventeen"
+        android:background="@color/colorDivider2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/pt_ten" />
+
+
+            <com.evertech.core.widget.SideBar
+                android:id="@+id/sideBar"
+                android:layout_width="@dimen/pt_twenty"
+                android:layout_height="400pt"
+                android:layout_gravity="right|center"
+                tools:ignore="RtlHardcoded" />
+
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearch"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

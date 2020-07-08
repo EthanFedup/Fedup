@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/pt_twenty_four"
+    android:paddingStart="@dimen/pt_fifteen">
+
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/pt_seventeen"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/pt_twelve"
+        android:visibility="gone"
+        tools:text="A" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/pt_fifteen"
+            tools:text="中国" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/pt_twelve"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/pt_twelve"
+            tools:text="+86" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pt_one"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorDivider2">
+
+        </View>
+    </RelativeLayout>
+</LinearLayout>

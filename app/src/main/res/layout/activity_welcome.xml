@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/pt_seventy"
+    android:paddingBottom="@dimen/pt_forty_seven"
+    tools:context=".login.view.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_welcome"
+        style="@style/iv_welcome" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        style="@style/tv_welcome_one"
+        android:layout_below="@+id/iv_welcome" />
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_height="@dimen/pt_thirty_eight"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView style="@style/iv_splash_logo" />
+
+
+        <TextView
+            style="@style/tv_welcome_two"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt_forty_two"
+        android:layout_alignParentBottom="true">
+
+      <!--  <RelativeLayout
+            style="@style/Weight_Horizontal_Match"
+            android:gravity="center">-->
+
+            <TextView
+                android:id="@+id/tv_login"
+                style="@style/tv_welcome_login"
+                android:layout_marginStart="@dimen/pt_twenty_eight"/>
+        <!--</RelativeLayout>-->
+
+     <!--   <RelativeLayout
+            style="@style/Weight_Horizontal_Match"
+            android:gravity="center">-->
+
+            <TextView
+                android:id="@+id/tv_register"
+                style="@style/tv_welcome_login"
+                android:textColor="@color/colorCommBlue"
+                android:background="@drawable/bg_register"
+                android:text="注册"
+                android:layout_marginStart="@dimen/pt_twenty_three"/>
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+</RelativeLayout>

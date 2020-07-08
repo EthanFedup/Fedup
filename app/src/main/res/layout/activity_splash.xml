@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.view.SplashActivity"
+    android:paddingTop="185pt"
+    android:paddingBottom="55pt">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        style="@style/tv_splash_welcome"/>
+
+
+
+    <ImageView
+        android:layout_below="@+id/tv_welcome"
+        android:layout_marginTop="17pt"
+        style="@style/iv_splash_logo" />
+
+    <TextView style="@style/tv_splash_welcome_bottom"/>
+
+</RelativeLayout>

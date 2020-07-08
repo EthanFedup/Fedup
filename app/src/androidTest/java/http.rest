@@ -1,0 +1,2 @@
+POST
+https://minigamma.fedup.cn/api/app_register.php

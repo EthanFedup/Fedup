@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_root"
+    style="@style/Layout_Match_Match">
+
+    <LinearLayout
+        android:id="@+id/ll_alert_content"
+        style="@style/Layout_Match_Wrap"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+       <!-- android:background="@drawable/bg_simple_alert_view2"-->
+
+        <TextView
+            android:id="@+id/tv_alert_title"
+            style="@style/tv_simple_alert_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="27.5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            tools:text="请完善出行资料" />
+
+        <TextView
+            android:id="@+id/tv_alert_content"
+            style="@style/tv_simple_alert_content"
+            android:layout_marginBottom="27.5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="27.5dp"
+            android:lineSpacingMultiplier="1.39"
+            tools:text="年底发简历到甲方拉到就发了的房间爱了就发了的激发了对方" />
+
+        <View
+            style="@style/Layout_Match_Wrap"
+            android:layout_height="0.5dp"
+            />
+        <!--    android:background="@color/simple_alert_view_divider"-->
+
+        <FrameLayout
+            style="@style/Layout_Match_Match"
+            android:layout_height="57dp">
+
+            <LinearLayout
+                android:id="@+id/ll_tv_alert_both_text"
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_alert_left_text"
+                    style="@style/tv_simple_alert_left"
+                    tools:text="确定" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    />
+                  <!--  android:background="@color/simple_alert_view_divider"-->
+
+                <TextView
+                    android:id="@+id/tv_alert_right_text"
+                    style="@style/tv_simple_alert_left"
+                    tools:text="取消" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_alert_single_text"
+                style="@style/tv_simple_alert_single"
+                tools:text="确定" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

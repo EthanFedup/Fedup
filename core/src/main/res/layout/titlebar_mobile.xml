@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Wrap"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_title_bar_left"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="19pt"
+                android:layout_height="16.5dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_back_black" />
+
+            <ImageView
+                android:id="@+id/iv_back_bold"
+                style="@style/iv_back_bold" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Layout_Match_Match"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="#23232e"
+            android:textSize="16sp"
+            tools:text="讲述了在一片虚构的中世纪大陆上所发生的一系列相互联系的宫廷斗争、疆场厮杀、游历冒险和魔法抗衡的故事，全书七卷（包括未出的各卷）浑然一体，共同组成了一幅壮丽而完整的画卷。" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/tv_title_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="设置" />
+
+    </RelativeLayout>
+
+<!--    <ImageView style="@style/common_shadow_up" />-->
+
+</LinearLayout>

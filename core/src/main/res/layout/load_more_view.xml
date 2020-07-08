@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        style="@style/Layout_Match_Match"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            style="@style/Layout_Match_Match"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_anim"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp"
+                />
+               <!-- android:src="@mipmap/ic_loading" -->
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Layout_Wrap_Wrap"
+                android:text="加载中"
+                android:textColor="#969695"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_loading_fail"
+            style="@style/Layout_Match_Match"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="加载失败，请点击重试"
+                android:textColor="#969695"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_loading_end"
+            style="@style/Layout_Match_Match"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="已全部加载完毕"
+                android:textColor="#969695"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

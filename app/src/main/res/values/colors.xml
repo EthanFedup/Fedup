@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--登录-->
+    <color name="colorLoginBg">#2495ed</color>
+    <color name="colorLoginHintPhoneNumber">#bababc</color>
+    <color name="colorDivider">#d8d8d8</color>
+    <color name="colorForgotPassword">#2495ed</color>
+    <color name="colorCommBlue">#2495ed</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDivider2">#f3f3f3</color>
+    <color name="colorHintPasswordFormat">#98a1a8</color>
+</resources>

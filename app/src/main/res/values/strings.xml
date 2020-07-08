@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fedup</string>
+    <!--    <string name="app_name_fedup">Fedup</string>-->
+    <string name="hint_login_input_phone_number">请输入您的手机号</string>
+    <string name="hint_login_password">请输入8-20位数字+字母组合</string>
+    <string name="hint_please_input_password">请输入登录密码</string>
+    <string name="hint_please_set_password">请设置登录密码</string>
+    <string name="hint_login_input_verify_code">请输入验证码</string>
+    <string name="hint_register_input_email">请输入邮箱地址</string>
+    <string name="hint_register_input_username">请输入您的用户名</string>
+    <string name="hint_password_format">密码必须包含大小写字母、数字、长度至少8个字符</string>
+    <string name="hint_search_country_code">搜索国家/地区中英文或数字代码</string>
+</resources>

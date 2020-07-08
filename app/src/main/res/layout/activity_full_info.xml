@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.view.FullInfoActivity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        style="@style/tv_login_welcome" />
+
+    <ImageView
+        style="@style/iv_login_logo"
+        android:layout_marginTop="23pt"
+        android:layout_marginBottom="@dimen/pt_fifty_nine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/pt_thirty_six"
+        android:layout_marginEnd="@dimen/pt_thirty"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt_twenty_seven">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                style="@style/iv_login_phone" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                style="@style/et_register_username"
+                android:layout_toEndOf="@+id/iv_phone" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divider_line"
+            android:layout_marginTop="@dimen/pt_twenty" />
+
+        <!-- android:layout_marginStart="@dimen/pt_thirty_six"
+            android:layout_marginEnd="@dimen/pt_thirty"-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt_twenty_seven"
+            android:layout_marginTop="@dimen/pt_twenty_two">
+
+            <ImageView
+                android:id="@+id/iv_password"
+                style="@style/iv_login_phone"
+                android:src="@mipmap/icon_logon_password" />
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/et_register_email"
+                android:layout_toEndOf="@+id/iv_password"
+                android:hint="@string/hint_login_password" />
+        </RelativeLayout>
+
+        <View
+            style="@style/divider_line"
+            android:layout_marginTop="@dimen/pt_twenty" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        style="@style/tv_btn_login"
+        android:text="注册"/>
+</LinearLayout>

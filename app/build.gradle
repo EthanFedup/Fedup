@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "com.alibaba.arouter"
+apply from: "../config.gradle"
+apply from: "../dependencies.gradle"
+android {
+    compileSdkVersion compileSdk_Version
+    buildToolsVersion buildTools_Version
+    defaultConfig {
+        applicationId module_appApplicationId
+        minSdkVersion minSdk_Version
+        targetSdkVersion targetSdk_Version
+        versionCode moduleAppVersionCode
+        versionName moduleAppVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            resValue "string", "app_name_fedup", appName.debug
+
+            buildConfigField("String", "BASE_URL", baseUrl.debug)
+            buildConfigField("String", "WEB_BASE_URL", webBaseUrl.debug)
+
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "app_name_fedup", appName.release
+
+            buildConfigField("String", "BASE_URL", baseUrl.release)
+            buildConfigField("String", "WEB_BASE_URL", webBaseUrl.release)
+
+        }
+    }
+
+    kapt {
+        arguments {
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation kotlinDeps
+//    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation appcompat
+    implementation core_ktx
+    implementation constraintlayout
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation java_test
+    androidTestImplementation android_test.values()
+
+    implementation project(':core')
+
+    kapt butterknife_compiler
+    /* Router */
+    api arouter_api
+    kapt arouter_compiler
+
+}
